@@ -160,5 +160,16 @@
 
         </div>
 
+        <script>
+              // Verifica se é dispositivo mobile
+              const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+              if (!isMobile) {
+                // Redireciona ou bloqueia visualização
+                document.body.innerHTML = '<h2 style="text-align:center;margin-top:50px;font-family:sans-serif;">Acesse essa página apenas pelo celular 📱</h2>';
+              }
+        </script>
+
+
     </body>
 </html>
